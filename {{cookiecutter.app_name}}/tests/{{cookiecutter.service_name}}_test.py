@@ -5,12 +5,12 @@ from flask import json
 from service import {{cookiecutter.service_name}}
 
 
-class TestService(unittest.TestCase):
+class Test{{cookiecutter.service_name|title}}Service(unittest.TestCase):
     def setUp(self):
         {{cookiecutter.service_name}}.app.testing = True
         self.app = {{cookiecutter.service_name}}.app.test_client()
 
-    def test_spellchecker_olx(self):
+    def test_{{cookiecutter.service_name}}_olx(self):
         response = self.app.get('/{{cookiecutter.service_name}}/olx')
         self.assertEqual(json.loads(response.get_data()), ['Hello, olx!'])
 

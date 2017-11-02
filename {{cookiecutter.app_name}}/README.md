@@ -20,7 +20,7 @@ just run `pytest` in main catalog
 
 ## Docker
 ### Build
-`docker build -t ms-spel{{cookiecutter.service_name}}lchecker .`
+`docker build -t ms-{{cookiecutter.service_name}}lchecker .`
 
 ### Run
 `docker run -d -p 5000:5000 --name ms-{{cookiecutter.service_name}}-c --rm ms-{{cookiecutter.service_name}}`

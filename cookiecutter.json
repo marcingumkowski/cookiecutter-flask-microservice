@@ -1,10 +1,7 @@
 {
-
-
-
 	"project_name": "My microservice App",
 	"description": "This microservice is to do awsome stuff",
-	"app_name": "mymicroserviceapp",
+	"app_name": "my-microservice-app",
 	"service_name": "myservice"
 }
 
